@@ -1,0 +1,40 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test dependencies",
+  "main": "helpers.js",
+  "scripts": {
+ "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "chai": "^4.1.2",
+    "cli-color": "^1.2.0",
+    "gulp-util": "^3.0.8",
+    "mocha": "^5.2.0",
+    "request": "^2.87.0",
+    "shelljs": "^0.8.2",
+    "supertest": "^3.1.0"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "./test/*.js"
+    ],
+    "exclude": [
+      "*",
+      "coverage/**",
+      "packages/*/test/**",
+      "test/**",
+      "test{, - *}.js",
+      "**/*{., - }test.js",
+      "**/__tests__/**",
+      "**/node_modules/**",
+      "**/babel.config.js"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  }
+}

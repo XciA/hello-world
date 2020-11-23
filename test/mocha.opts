@@ -1,0 +1,5 @@
+--require globals
+--require helper
+--reporter spec
+--globals global
+

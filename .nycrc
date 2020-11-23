@@ -1,0 +1,38 @@
+{
+  "check-coverage": true,
+  "include": [
+    "*.js",
+    "**/*.js",
+    "./*.js",
+    "./**/*.js",
+    "./**/**/*.js"
+  ],
+  "reporter": [
+    "json",
+    "lcov",
+    "html",
+    "text"
+  ],
+  "per-file": false,
+
+  "all": true,
+  "require": [
+    "@babel/register"
+  ],
+  "exclude": [
+    "coverage/**",
+    "packages/*/test/**",
+    "test/**",
+    "test{, - *}.js",
+    "**/*{., - }test.js",
+    "**/__tests__/**",
+    "**/node_modules/**",
+    "**/babel.config.js",
+    "**/test/**",
+    "**/coverage/**"
+  ],
+  "extension": [
+    ".js"
+  ],
+  "report-dir": "./doc/report/coverage"
+}
