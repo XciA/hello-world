@@ -17,7 +17,7 @@ const helloController = new hello.HelloController(responseObj, validator, null);
 const publicRouter = router();
 let routes = [];
 
-//Healthcheck endpoint
+//Add Healthcheck endpoint
 routes.push(
         {
             method: 'get',
